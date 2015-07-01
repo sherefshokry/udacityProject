@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.dell.sh2tk_online" >
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+
+    <application  android:name=".ApplicationContextProvider"
+
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+
+    <activity
+        android:name="com.example.dell.sh2tk_online.logIn"
+        android:label="@string/app_name" >
+        <intent-filter>
+            <action android:name="com.example.dell.sh2tk_online.logIn" />
+
+            <category android:name="android.intent.category.DEFAULT" />
+        </intent-filter>
+    </activity>
+
+        <activity
+            android:name="com.example.dell.sh2tk_online.myContacts"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="com.example.dell.sh2tk_online.myContacts" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="com.example.dell.sh2tk_online.signUp"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="com.example.dell.sh2tk_online.signUp" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="com.example.dell.sh2tk_online.homePage"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="com.example.dell.sh2tk_online.homePage" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+
+        <activity
+            android:name="com.example.dell.sh2tk_online.sellFlats"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="com.example.dell.sh2tk_online.sellFlats" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="com.example.dell.sh2tk_online.advertisment"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="com.example.dell.sh2tk_online.advertisment" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
